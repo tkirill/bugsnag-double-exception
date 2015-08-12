@@ -9,6 +9,7 @@ namespace DoubleException
         protected void Application_Start()
         {
             RouteTable.Routes.MapMvcAttributeRoutes();
+            GlobalFilters.Filters.Add(new SampleExceptionFilter());
         }
     }
 }
